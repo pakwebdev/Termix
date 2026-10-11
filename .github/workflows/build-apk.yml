@@ -21,21 +21,24 @@ jobs:
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
-
-      - name: Accept Android licenses
-        run: yes | sdkmanager --licenses || true
+        with:
+          packages: 'tools platform-tools platforms;android-35 build-tools;35.0.0'
 
       - name: Make gradlew executable
         run: chmod +x gradlew
 
       - name: Build Debug APK
         run: ./gradlew assembleDebug --stacktrace --no-daemon
+        env:
+          ANDROID_HOME: ${{ env.ANDROID_HOME }}
 
       - name: List APK
-        run: find app/build/outputs -name "*.apk" -ls || true
+        if: always()
+        run: find app/build -name "*.apk" -ls 2>/dev/null || echo "No APK found"
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
+        if: success()
         with:
           name: Termix-debug-apk
           path: app/build/outputs/apk/debug/*.apk
