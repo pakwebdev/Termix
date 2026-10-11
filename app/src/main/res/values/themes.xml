@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Termix" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@color/termix_black</item>
+        <item name="android:navigationBarColor">@color/termix_black</item>
+        <item name="android:windowBackground">@color/termix_black</item>
+        <item name="android:colorPrimary">@color/termix_green</item>
+    </style>
+</resources>

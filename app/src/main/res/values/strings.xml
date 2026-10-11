@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Termix</string>
+    <string name="onboarding_title">Choose a Linux distribution</string>
+    <string name="onboarding_subtitle">Termix runs a real Linux environment without root using PRoot.</string>
+    <string name="install">Install</string>
+    <string name="installing">Installing…</string>
+    <string name="new_session">New session</string>
+    <string name="sessions">Sessions</string>
+    <string name="max_sessions_reached">Maximum 20 sessions reached</string>
+    <string name="close_session">Close session</string>
+</resources>

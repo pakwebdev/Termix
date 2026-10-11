@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="termix_black">#FF0D1117</color>
+    <color name="termix_surface">#FF161B22</color>
+    <color name="termix_green">#FF3FB950</color>
+    <color name="termix_blue">#FF58A6FF</color>
+    <color name="termix_text">#FFE6EDF3</color>
+    <color name="termix_muted">#FF8B949E</color>
+</resources>
